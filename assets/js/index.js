@@ -41,7 +41,7 @@ function getUserInfo() {
 
 // 渲染用户的头像
 function renderAvatar(user) {
-  console.log(user);
+  // console.log(user);
   // 1. 获取用户的名称
   var name = user.nickname || user.username
   // 2. 设置欢迎的文本
@@ -55,7 +55,7 @@ function renderAvatar(user) {
     // 3.2 渲染文本头像
     $('.layui-nav-img').hide()
     // 取用户名的第一个字母并转化为大写
-    var first = name[0].toUpperCase() + name[1]
+    var first = name[0].toUpperCase()
     $('.text-avatar').html(first).show()
   }
 }
